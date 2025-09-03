@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resposividade.css">
+    <title>Teste SJT</title>
+</head>
+<body>
+
+    <main>
+
+        <section class="welcome">
+            <h1>Bem vindo ao Santuário <br> São Judas Tádeu</h1>
+            <p>Padroeiro das causas impossíveis</p>
+            <img class= "bg" src="/assets/WhatsApp Image 2025-09-01 at 09.02.04.jpeg" alt="">
+        </section>
+        
+        <section class="home">
+            <header>
+            <div class="circle"><img src="assets/IMG_3578.PNG" alt="Logo do Santuário"></div>
+            <p>Santuário São Judas Tadeu</p>
+              <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <nav>
+            <a href="#">Home</a>
+            <a href="#">Eventos</a>
+            <a href="#">Doações</a>
+            <a href="#">Contato</a>
+            </nav>
+        </header>
+
+        <h1>Santuário São <br>Judas Tádeu</h1>
+        <button>Encontre-nos</button>
+        <div class="icons">
+            <div class="circle"><p>W</p></div>
+            <div class="circle"><p>I</p></div>
+            <div class="circle"><p>F</p></div>
+        </div>
+        <img class="bg" src="/assets/fachada.jpeg" alt="">
+        </section>
+    </main>
+    
+    <section class="about">
+        <h1>Sobre nós</h1>
+        <p>O Santuário São Judas Tadeu é um local de fé e devoção, dedicado ao padroeiro das causas impossíveis. Fundado em [ano de fundação], o santuário tem sido um ponto de encontro para milhares de fiéis que buscam conforto espiritual e milagres através da intercessão de São Judas Tadeu.</p>
+        <p>Nossa missão é proporcionar um ambiente acolhedor onde os visitantes possam fortalecer sua fé, participar de celebrações religiosas e encontrar apoio em momentos de dificuldade. Oferecemos missas diárias, novenas semanais e eventos especiais ao longo do ano para celebrar a vida e os ensinamentos de São Judas Tadeu.</p>
+        <p>Além das atividades religiosas, o santuário também se dedica a ações sociais, ajudando a comunidade local através de programas de assistência e solidariedade. Acreditamos que a fé deve ser acompanhada por ações concretas de amor ao próximo.</p>
+        <img class="bg" src="/assets/WhatsApp Image 2025-09-02 at 10.14.12.jpeg" alt="Imagem do Santuário"> 
+
+    </section>
+</body>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
+</html>

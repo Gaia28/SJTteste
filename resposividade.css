@@ -1,0 +1,135 @@
+/* ----------------- RESPONSIVIDADE ----------------- */
+/* Menu toggle (hamburger) */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #FFE1A8;
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .welcome h1 {
+    font-size: 3rem;
+  }
+  .welcome p {
+    font-size: 1.2rem;
+  }
+  .home h1 {
+    font-size: 3rem;
+  }
+  .about h1 {
+    font-size: 2.5rem;
+  }
+  header nav {
+    gap: 15px;
+  }
+    .menu-toggle {
+    display: block; /* mostra o botão */
+    margin-left: auto;
+  }
+  
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+   header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  header nav {
+    display: none;           /* Esconde os links por padrão */
+    flex-direction: column;  /* Links em coluna */
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+  }
+  header img {
+    height: 40px;
+    margin-bottom: 5px;
+  }
+   /* Quando ativo (classe aberta via JS) */
+  header nav.active {
+    display: flex;
+  }
+    .menu-toggle {
+    display: block; /* mostra o botão */
+    margin-left: auto;
+  }
+
+  header p {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  header .circle {
+    width: 10%;
+
+  }
+
+  .welcome h1 {
+    font-size: 2.2rem;
+    padding: 0 15px;
+  }
+  .welcome p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .home h1 {
+    font-size: 2.2rem;
+    padding: 0 15px;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+    padding: 0 15px;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+    padding: 0 20px;
+    text-align: left; /* mais legível no celular */
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  
+  button {
+    width: 100%; /* ocupa toda a largura no celular */
+    max-width: 300px;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .welcome h1 {
+    font-size: 1.8rem;
+  }
+  .welcome p {
+    font-size: 0.9rem;
+  }
+  .home h1 {
+    font-size: 1.8rem;
+  }
+  .about h1 {
+    font-size: 1.5rem;
+  }
+}
+.about p {
+    font-size: 0.8rem;
+  }
+  .icons .circle {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  } 
