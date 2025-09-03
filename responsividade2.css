@@ -1,0 +1,182 @@
+/* ========================= */
+/* RESPONSIVIDADE GLOBAL */
+/* ========================= */
+
+/* Telas até 1024px (tablets em modo paisagem) */
+@media (max-width: 1024px) {
+  header p {
+    font-size: 1rem;
+  }
+
+  .text h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome h1 {
+    font-size: 3rem;
+  }
+
+  .welcome p {
+    font-size: 1.2rem;
+  }
+
+  .home button {
+    width: 40%;
+    font-size: 1rem;
+  }
+}
+
+/* Telas até 768px (tablets e celulares grandes) */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  header nav {
+    display: none; /* some o menu desktop */
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    background: white;
+    border-top: 1px solid #ddd;
+  }
+
+  header .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+    color: rgb(146, 15, 15);
+  }
+
+  /* ativa o menu mobile quando adicionar a classe .active via JS */
+  header nav.active {
+    display: flex;
+  }
+
+  .content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+  }
+
+  .text {
+    gap: 20px;
+  }
+
+  .image {
+    margin-top: 20px;
+  }
+
+  .home button {
+    width: 60%;
+    height: auto;
+    font-size: 1rem;
+  }
+
+  .about {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  header img {
+    height: 40px;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .welcome h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  .welcome p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .text h1 {
+    font-size: 1.8rem;
+  }
+
+  .icons {
+    gap: 10px;
+  }
+
+  .icons .circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .home button {
+    width: 80%;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .schedules h1 {
+    font-size: 2rem;
+  }
+
+  .schedules .card {
+    width: 90%;
+  }
+}
+/* Telas até 768px (tablets e celulares grandes) */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .image {
+    order: -1; /* coloca a imagem antes do texto */
+    width: 100%; /* ocupa toda a largura */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image img {
+    width: 100%;  /* imagem ocupa toda a largura */
+    height: auto; /* mantém proporção */
+    object-fit: cover; /* garante que preencha bem */
+  }
+
+  .text {
+    width: 100%; /* texto ocupa toda a largura abaixo */
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text h1 {
+    font-size: 1.6rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+}

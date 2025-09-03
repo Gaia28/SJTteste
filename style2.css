@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
 
 /*----------HEADER----------*/
 header {
-position: sticky;  
+position: fixed;  
   top: 0;            
   width: 100%;       /* ocupa largura total */
   z-index: 1000;     /* fica acima da imagem */
@@ -15,19 +16,11 @@ position: sticky;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
+  background-color: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra sutil */
 
 }
-header .circle{
-    width: 3%;
-    background-color: #ffffff; 
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
+
 header img {
   height: 50px;
 }
@@ -74,12 +67,14 @@ header nav a:hover {
     overflow: hidden;
     
 }
+
 .bg{
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     z-index: -1;
+    border-radius: 0%;
     filter: brightness(45%);    
 }
 
@@ -111,7 +106,7 @@ header nav a:hover {
     
 }
 
-.home .content {
+.content {
     display: flex;
     align-items: center;      /* Alinha verticalmente ao centro */
     justify-content: center;  /* Opcional: centraliza horizontalmente o bloco inteiro */
@@ -120,7 +115,7 @@ header nav a:hover {
     padding: 20px;
 }
 
-.home .text {
+.text {
     flex: 1;                  /* Ocupa metade da largura disponível */
     display: flex;
     flex-direction: column;
@@ -131,22 +126,23 @@ header nav a:hover {
 }
 .text h1{
     color: rgb(146, 15, 15);
-    font-size: 4rem;
-    text-align: left;
+    font-size: 6rem;
+    text-align: center;
     font-family: 'Hina Mincho', serif;
    }
 
-.home .image {
+.image {
     flex: 1;                  
     display: flex;
     justify-content: center;  
     align-items: center;      
 }
-.home img{
+img{
     border-radius: 10px;
     max-width: 100%;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    filter: brightness(70%);
+    box-shadow: rgba(99, 29, 29, 0.35) 0px 5px 15px;
 }
 .icons{
     display: flex;
@@ -165,6 +161,8 @@ header nav a:hover {
     font-size: 1.2rem;
 }
 .home button{
+    width: 20%;
+    height: 10%;
     padding: 10px 20px;
     background-color: rgb(146, 15, 15);
     border: none;
@@ -172,8 +170,114 @@ header nav a:hover {
     color: #FFE1A8;
     font-weight: bold;
     cursor: pointer;
+    font-size: 1.2rem;
     font-family: 'Hina Mincho', serif;
     transition: background-color 0.3s;
 }
+.home button:hover{
+    background-color: #f1c40f; /* Amarelo ao passar o mouse */
+}
+/*----------HOME END----------*/
+/*-----------ABOUT------------*/
+.about{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    position: relative; 
+    overflow: hidden;
+    
+}
+/* ...existing code... */
+.about .text {
+    margin-left: 20px;
+    align-items: flex-start;
+    text-align: left;
+}
+/* ...existing code... */
+.about p{
+    color: rgb(146, 15, 15);
+    font-size: 1.6rem;
+    text-align: justify;
+    font-family: 'Hina Mincho', serif;
+    
+}
+/*----------ABOUT END----------*//* SECTION HORÁRIOS */
+.schedules {
+  padding: 3rem 1rem;
+  text-align: center;
+  display: flex;
+    flex-direction: column;
+}
+/* ...existing code... */
+.schedules .content.horarios {
+    display: flex;
+    flex-direction: column; /* Organiza os filhos em coluna */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Começa do topo */
+    gap: 24px;              /* Espaço entre os elementos */
+}
+
+.schedules .cards {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    justify-content: center;
+}
+
+.schedules h1 {
+  font-size: 4em;
+  color: rgb(146, 15, 15);
+  margin-bottom: 0.5rem;
+}
+
+.schedules p {
+  font-size: 1rem;
+  color: #5a3d2b;
+  margin-bottom: 2rem;
+}
+
+.schedules .cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.schedules .card {
+  background: #6b2e1f;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.schedules .card:hover {
+  transform: translateY(-5px);
+}
+
+.schedules .card .icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.schedules .card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.schedules .card p {
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+  color: #FFE1A8;
+}
+
+/*----------HORARIOS----------*/
+
+
 
 

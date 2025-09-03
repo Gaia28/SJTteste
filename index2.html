@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="responsividade2.css">
     <title>Teste SJT 2</title>
 </head>
 
 <body>
+    
     <main>
         <section class="welcome">
-            <h1>Bem vindo ao Santuário <br> São Judas Tádeu</h1>
+            <h1>Bem vindo à Paróquia Santuário <br> São Judas Tádeu</h1>
             <p>Padroeiro das causas impossíveis</p>
             <img class="bg" src="/assets/WhatsApp Image 2025-09-01 at 09.02.04.jpeg" alt="">
         </section>
@@ -50,6 +52,58 @@
             </div>
         </div>
     </section>
-</body>
 
+    <section class="about home">
+        <div class="content">
+            <div class="image">
+                <img src="/assets/WhatsApp Image 2025-09-02 at 10.14.12.jpeg" alt="Imagem do Santuário">
+            </div>
+            <div class="text">
+                <h1>Sobre nós</h1>
+                <p>O Santuário São Judas Tadeu é um local de fé e devoção, dedicado ao padroeiro das causas impossíveis. Fundado em [ano de fundação], o santuário tem sido um ponto de encontro para milhares de fiéis que buscam conforto espiritual e milagres através da intercessão de São Judas Tadeu. Nossa missão é proporcionar um ambiente acolhedor onde os visitantes possam fortalecer sua fé, participar de celebrações religiosas e encontrar apoio em momentos de dificuldade. Oferecemos missas diárias, novenas semanais e eventos especiais ao longo do ano para celebrar a vida e os ensinamentos de São Judas Tadeu. Além das atividades religiosas, o santuário também se dedica a ações sociais, ajudando a comunidade local através de programas de assistência e solidariedade. Acreditamos que a fé deve ser acompanhada por ações concretas de amor ao próximo.</p>
+                            <button>Saiba mais</button>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="schedules">
+
+    <div class="content horarios">
+        <h1>Horários</h1>
+        <p>Participe de nossas celebrações e fortaleça sua fé em comunidade</p>
+
+        <div class="cards">
+            <div class="card">
+                <span class="icon">⏰</span>
+                <h3>Missas Dominicais</h3>
+                <p>Dia: <span>horário</span></p>
+                <p>Dia: <span>horário</span></p>
+            </div>
+            <div class="card">
+                <span class="icon">📖</span>
+                <h3>Missas Semanais</h3>
+                <p>Dia: <span>horário</span></p>
+                <p>Dia: <span>horário</span></p>
+            </div>
+            <div class="card">
+                <span class="icon">🎶</span>
+                <h3>Louvor e adoração</h3>
+                <p>Dia: <span>horário</span></p>
+                <p>Dia: <span>horário</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
 </html>
